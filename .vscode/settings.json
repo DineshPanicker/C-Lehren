@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/dinesh/Embedded-Linux/yocto_tutorial/poky/bitbake/lib",
+        "/home/dinesh/Embedded-Linux/yocto_tutorial/poky/meta/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/dinesh/Embedded-Linux/yocto_tutorial/poky/bitbake/lib",
+        "/home/dinesh/Embedded-Linux/yocto_tutorial/poky/meta/lib"
+    ],
+    "files.associations": {
+        "*.conf": "bitbake",
+        "*.inc": "bitbake"
+    }
+}

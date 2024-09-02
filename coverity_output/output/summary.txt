@@ -1,0 +1,11 @@
+cov-analyze --dir coverity_output --all 
+Analysis summary report:
+------------------------
+Files analyzed                 : 10 Total
+    C++                        : 10
+Total LoC input to cov-analyze : 29461
+Functions analyzed             : 17
+Classes/structs analyzed       : 13
+Paths analyzed                 : 36
+Time taken by analysis         : 00:00:06
+Defect occurrences found       : 0

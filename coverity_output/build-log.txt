@@ -1,0 +1,981 @@
+2024-09-02T12:28:51.138493Z|cov-build|23702|info|> cov-build 2021.12.1 (build 5269ff0e19 p-2021.12-push-625)
+2024-09-02T12:28:51.138542Z|cov-build|23702|info|> Coverity Build Capture (64-bit) version 2021.12.1 on Linux 5.10.102.1-microsoft-standard-WSL2 x86_64
+2024-09-02T12:28:51.138542Z|cov-build|23702|info|> Internal version numbers: 5269ff0e19 p-2021.12-push-625
+2024-09-02T12:28:51.138542Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.138576Z|cov-build|23702|info|> Dumping from hostname : MSI
+2024-09-02T12:28:51.138576Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.138591Z|cov-build|23702|info|> Platform info:
+2024-09-02T12:28:51.138591Z|cov-build|23702|info|> Sysname = Linux
+2024-09-02T12:28:51.138591Z|cov-build|23702|info|> Release = 5.10.102.1-microsoft-standard-WSL2
+2024-09-02T12:28:51.138591Z|cov-build|23702|info|> Machine = x86_64
+2024-09-02T12:28:51.138591Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.138591Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.138625Z|cov-build|23702|info|> cov-build command: cov-build --dir coverity_output g++ -c virtual_destructor.cpp 
+2024-09-02T12:28:51.138638Z|cov-build|23702|info|> cov-build expanded command: cov-build --dir coverity_output g++ -c virtual_destructor.cpp 
+2024-09-02T12:28:51.138947Z|cov-build|23702|info|> build command: /usr/bin/x86_64-linux-gnu-g++-9 -c virtual_destructor.cpp
+2024-09-02T12:28:51.139019Z|cov-build|23702|info|> thunk command: /home/dinesh/cov-analysis-linux64-2021.12.1/bin/cov-internal-thunk.sh g++ -c virtual_destructor.cpp
+2024-09-02T12:28:51.139019Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.139047Z|cov-build|23702|info|> Set UseSharedCompilation to false.
+2024-09-02T12:28:51.139069Z|cov-build|23702|info|> Set COVERITY_BIN to /home/dinesh/cov-analysis-linux64-2021.12.1/bin
+2024-09-02T12:28:51.139092Z|cov-build|23702|info|> Set COVERITY_SITE_CC to ar;g++;gcc;ld
+2024-09-02T12:28:51.139106Z|cov-build|23702|info|> Set COVERITY_SITE_CC_CAPTURE_DESCENDANTS to 
+2024-09-02T12:28:51.139121Z|cov-build|23702|info|> Set COVERITY_TEMP to /tmp/cov-dinesh/5bb470580f164c7a26050636ba17ff53
+2024-09-02T12:28:51.139143Z|cov-build|23702|info|> Set COVERITY_COMMON_TEMP to /tmp
+2024-09-02T12:28:51.139160Z|cov-build|23702|info|> Set COVERITY_IDIR to /home/dinesh/C-Lehren/coverity_output
+2024-09-02T12:28:51.139199Z|cov-build|23702|info|> Set COVERITY_OUTPUT to /home/dinesh/C-Lehren/coverity_output/build-log.txt
+2024-09-02T12:28:51.139213Z|cov-build|23702|info|> Set COVERITY_LOG to /home/dinesh/C-Lehren/coverity_output/build-log.txt
+2024-09-02T12:28:51.139229Z|cov-build|23702|info|> Set COVERITY_OUTPUT_ENCODING to UTF-8
+2024-09-02T12:28:51.139242Z|cov-build|23702|info|> Set COVERITY_SYSTEM_ENCODING to UTF-8
+2024-09-02T12:28:51.139257Z|cov-build|23702|info|> Set COVERITY_EMIT to /home/dinesh/C-Lehren/coverity_output/emit
+2024-09-02T12:28:51.139288Z|cov-build|23702|info|> Set COVERITY_IS_COMPILER to 0
+2024-09-02T12:28:51.139300Z|cov-build|23702|info|> Set COVERITY_TOP_PROCESS to 0
+2024-09-02T12:28:51.139310Z|cov-build|23702|info|> Set COVERITY_IS_COMPILER_DESCENDANT to 0
+2024-09-02T12:28:51.139318Z|cov-build|23702|info|> Set COVERITY_DISENGAGE_EXES to "qemuwrapper;qemu-aarch64;qemu-alpha;qemu-arm;qemu-armeb;qemu-cris;qemu-i386;qemu-m68k;qemu-microblaze;qemu-mips;qemu-mipsel;qemu-nios2;qemu-ppc;qemu-ppc64;qemu-ppc64abi32;qemu-sh4;qemu-sh4eb;qemu-sparc;qemu-sparc32plus;qemu-sparc64;qemu-x86_64"
+2024-09-02T12:28:51.139353Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.139353Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.139353Z|cov-build|23702|info|> Dumping Environment Variables:
+2024-09-02T12:28:51.139353Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.139391Z|cov-build|23702|info|> SHELL=/bin/bash
+2024-09-02T12:28:51.139402Z|cov-build|23702|info|> WSL_DISTRO_NAME=Ubuntu-20.04
+2024-09-02T12:28:51.139411Z|cov-build|23702|info|> WT_SESSION=1d6bfdda-1500-4edb-8dff-b8923b840c02
+2024-09-02T12:28:51.139419Z|cov-build|23702|info|> NAME=MSI
+2024-09-02T12:28:51.139427Z|cov-build|23702|info|> PWD=/home/dinesh/C-Lehren
+2024-09-02T12:28:51.139435Z|cov-build|23702|info|> LOGNAME=dinesh
+2024-09-02T12:28:51.139444Z|cov-build|23702|info|> MOTD_SHOWN=update-motd
+2024-09-02T12:28:51.139463Z|cov-build|23702|info|> HOME=/home/dinesh
+2024-09-02T12:28:51.139474Z|cov-build|23702|info|> LANG=C.UTF-8
+2024-09-02T12:28:51.139483Z|cov-build|23702|info|> WSL_INTEROP=/run/WSL/35_interop
+2024-09-02T12:28:51.139491Z|cov-build|23702|info|> LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+2024-09-02T12:28:51.139506Z|cov-build|23702|info|> LESSCLOSE=/usr/bin/lesspipe %s %s
+2024-09-02T12:28:51.139515Z|cov-build|23702|info|> TERM=xterm-256color
+2024-09-02T12:28:51.139524Z|cov-build|23702|info|> LESSOPEN=| /usr/bin/lesspipe %s
+2024-09-02T12:28:51.139532Z|cov-build|23702|info|> ZEPHYR_TOOLCHAIN_VARIANT=zephyr
+2024-09-02T12:28:51.139540Z|cov-build|23702|info|> USER=dinesh
+2024-09-02T12:28:51.139549Z|cov-build|23702|info|> SHLVL=1
+2024-09-02T12:28:51.139558Z|cov-build|23702|info|> WSLENV=WT_SESSION:WT_PROFILE_ID:
+2024-09-02T12:28:51.139567Z|cov-build|23702|info|> ZEPHYR_SDK_INSTALL_DIR=/home/dinesh/zephyr-sdk
+2024-09-02T12:28:51.139576Z|cov-build|23702|info|> XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+2024-09-02T12:28:51.139585Z|cov-build|23702|info|> PATH=/home/dinesh/.local/bin:/home/dinesh/cov-analysis-linux64-2021.12.1/bin:/home/dinesh/.local/bin:/home/dinesh/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Python311/Scripts/:/mnt/c/Program Files/Python311/:/mnt/a/Microchip/mpasm:/mnt/a/Microchip/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/Java/jdk1.8.0_281/bin:/mnt/a/Microchip/MPLAB C32 Suite/bin:/mnt/c/PROGRA~2/PICC:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/cygwin64/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Python 3.11:/mnt/a/Node/:/mnt/c/MinGW/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/a/Microchip/mpasm:/mnt/a/Microchip/bin:/mnt/c/Users/dines/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2021.2/bin:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/d/visual studio code/Microsoft VS Code/bin:/mnt/c/cygwin64/bin:/mnt/g/stm32cubeide_main/stm32/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610/tools/bin:/mnt/c/Program Files/Python 3.11:/mnt/c/Users/dines/AppData/Roaming/npm:/mnt/c/MinGW/bin:/snap/bin
+2024-09-02T12:28:51.139613Z|cov-build|23702|info|> HOSTTYPE=x86_64
+2024-09-02T12:28:51.139624Z|cov-build|23702|info|> WT_PROFILE_ID={4dd1e689-b517-5f39-947d-78e8a8bdf958}
+2024-09-02T12:28:51.139633Z|cov-build|23702|info|> OLDPWD=/home/dinesh
+2024-09-02T12:28:51.139641Z|cov-build|23702|info|> _=/usr/bin/x86_64-linux-gnu-g++-9
+2024-09-02T12:28:51.139649Z|cov-build|23702|info|> COVERITY_PREV_XML_CATALOG_FILES=
+2024-09-02T12:28:51.139658Z|cov-build|23702|info|> COVERITY_TOP_CONFIG=/tmp/cov-dinesh/5bb470580f164c7a26050636ba17ff53/cov-configure/coverity_config.xml
+2024-09-02T12:28:51.139668Z|cov-build|23702|info|> COVERITY_BUILD_INVOCATION_ID=3
+2024-09-02T12:28:51.139677Z|cov-build|23702|info|> COVERITY_CONFIG_FILE=/home/dinesh/cov-analysis-linux64-2021.12.1/config/coverity_config.xml
+2024-09-02T12:28:51.139686Z|cov-build|23702|info|> UseSharedCompilation=false
+2024-09-02T12:28:51.139695Z|cov-build|23702|info|> COVERITY_BIN=/home/dinesh/cov-analysis-linux64-2021.12.1/bin
+2024-09-02T12:28:51.139704Z|cov-build|23702|info|> COVERITY_SITE_CC=ar;g++;gcc;ld
+2024-09-02T12:28:51.139713Z|cov-build|23702|info|> COVERITY_SITE_CC_CAPTURE_DESCENDANTS=
+2024-09-02T12:28:51.139722Z|cov-build|23702|info|> COVERITY_TEMP=/tmp/cov-dinesh/5bb470580f164c7a26050636ba17ff53
+2024-09-02T12:28:51.139731Z|cov-build|23702|info|> COVERITY_COMMON_TEMP=/tmp
+2024-09-02T12:28:51.139740Z|cov-build|23702|info|> COVERITY_IDIR=/home/dinesh/C-Lehren/coverity_output
+2024-09-02T12:28:51.139750Z|cov-build|23702|info|> COVERITY_REWRITE_FROM=
+2024-09-02T12:28:51.139758Z|cov-build|23702|info|> COVERITY_REWRITE_TO=
+2024-09-02T12:28:51.139767Z|cov-build|23702|info|> COVERITY_ENABLE_JAVA_ANNOTATION_FRAMEWORK_SUPPORT=1
+2024-09-02T12:28:51.139775Z|cov-build|23702|info|> COVERITY_OUTPUT=/home/dinesh/C-Lehren/coverity_output/build-log.txt
+2024-09-02T12:28:51.139785Z|cov-build|23702|info|> COVERITY_LOG=/home/dinesh/C-Lehren/coverity_output/build-log.txt
+2024-09-02T12:28:51.139794Z|cov-build|23702|info|> COVERITY_OUTPUT_ENCODING=UTF-8
+2024-09-02T12:28:51.139803Z|cov-build|23702|info|> COVERITY_SYSTEM_ENCODING=UTF-8
+2024-09-02T12:28:51.139811Z|cov-build|23702|info|> COVERITY_EMIT=/home/dinesh/C-Lehren/coverity_output/emit
+2024-09-02T12:28:51.139820Z|cov-build|23702|info|> COVERITY_IS_COMPILER=0
+2024-09-02T12:28:51.139828Z|cov-build|23702|info|> COVERITY_TOP_PROCESS=0
+2024-09-02T12:28:51.139835Z|cov-build|23702|info|> COVERITY_IS_COMPILER_DESCENDANT=0
+2024-09-02T12:28:51.139843Z|cov-build|23702|info|> COVERITY_DISENGAGE_EXES=qemuwrapper;qemu-aarch64;qemu-alpha;qemu-arm;qemu-armeb;qemu-cris;qemu-i386;qemu-m68k;qemu-microblaze;qemu-mips;qemu-mipsel;qemu-nios2;qemu-ppc;qemu-ppc64;qemu-ppc64abi32;qemu-sh4;qemu-sh4eb;qemu-sparc;qemu-sparc32plus;qemu-sparc64;qemu-x86_64
+2024-09-02T12:28:51.139865Z|cov-build|23702|info|> COVERITY_COMPILER_PATH_MISMATCH_FILE=/home/dinesh/C-Lehren/coverity_output/has_path_mismatches
+2024-09-02T12:28:51.139877Z|cov-build|23702|info|> COVERITY_PATHLESS_CONFIGS_FILE=/home/dinesh/C-Lehren/coverity_output/has_pathless_configs
+2024-09-02T12:28:51.139891Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.139891Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.139891Z|cov-build|23702|info|> Dumping configuration:
+2024-09-02T12:28:51.139891Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.139917Z|cov-build|23702|info|> User/default configuration:
+2024-09-02T12:28:51.139917Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.139941Z|cov-build|23702|info|> Configuration read from: command-line
+2024-09-02T12:28:51.139941Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.139941Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.139941Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/coverity_config.xml
+2024-09-02T12:28:51.139941Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.139941Z|cov-build|23702|info|>     Node: prevent
+2024-09-02T12:28:51.139941Z|cov-build|23702|info|>       Node: dir Value: /home/dinesh/C-Lehren/coverity_output
+2024-09-02T12:28:51.139941Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/gcc-config-1/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-2/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-2/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-3/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-3/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/ld-config-1/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/ar-config-1/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-gcc-config-0/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-ld-config-0/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|>     Node: include Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-ar-config-0/coverity_config.xml
+2024-09-02T12:28:51.140011Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/gcc-config-1/coverity_config.xml
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_name Value: gcc
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_name Value: gcc-9
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_name Value: x86_64-linux-gnu-gcc-9
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_dir Value: /usr/bin
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_translator Value: gcc
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_lang Value: C
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_front_end Value: cov-emit
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_desc Value: GNU C compiler
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_next_type Value: g++
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_generic Value: gnu
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: comp_require
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: id Value: gcc-gcc-9.4.0-1
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: version Value: 9.4.0
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: is_compiler Value: true
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: is_linker Value: true
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: target_platform Value: all
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: id Value: gcc-gcc-9.4.0-1
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: compile_options
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/9/include
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/local/include
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: dryrun_switch Value: -E
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: dryrun_switch Value: -v
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -dM
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -E
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -o.+
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -c
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -Werror
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: preprocess_remove_next_arg Value: -o
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: preprocess_switch Value: -E
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: preprocess_switch Value: -U__BLOCKS__
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: preprocess_switch Value: -xc
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: preprocess_compile_switch Value: -C
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: preprocess_output Value: -
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: dryrun_output Value: 2
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/gcc-config-1/coverity-compiler-compat.h
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: macro_pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/gcc-config-1/coverity-macro-compat.h
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --fixed_point
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_float
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_feature_test_macros
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_stdarg_builtin
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_int
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_cplusplus
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: -w
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --comp_ver
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: 9.4.0
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --size_t_type=m
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --ptrdiff_t_type=l
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_sizes=xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_alignments=xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --char_bit_size=8
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --restrict
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --wchar_t_type=i
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_multiline_string
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_trigraphs
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --ignore_calling_convention
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --c11
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_80bit_float
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_float
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --allow__bool
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --macro_stack_pragmas
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --inline_keyword
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_macro
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_next_macro
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_cpp_attribute_macro
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.c{1,2}$
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.cpp$
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/gcc-config-1/../user_nodefs.h
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: pch_options
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>           Node: archetype Value: gcc
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: link_options
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/../lib/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/../lib/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libc.so
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: expand
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>             Node: replace_arg_regex
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>               Node: replace Value: @(.*)
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>               Node: with Value: --coverity_resp_file=$1
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: pre_trans
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>             Node: intern_trans Value: gnu_pre_translate
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>             Node: includes_from_env_var Value: CPATH
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>             Node: includes_from_env_var_empty_is_cwd Value: true
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>             Node: includes_from_env_var Value: C_INCLUDE_PATH
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>             Node: pre_prepend_arg Value: --c
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|>   Node: md5 Value: 536f82421cbb53d1a4ccb2a16468b97f
+2024-09-02T12:28:51.140111Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-2/coverity_config.xml
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_name Value: gcc
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_name Value: gcc-9
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_name Value: x86_64-linux-gnu-gcc-9
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_dir Value: /usr/bin
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_translator Value: g++
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_lang Value: C++
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_front_end Value: cov-emit
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_desc Value: GNU C++ Compiler
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_next_type Value: g++cc
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_generic Value: gnu
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: comp_require
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: id Value: g++-gcc-9.4.0-2
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: version Value: 9.4.0
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: is_compiler Value: true
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: is_linker Value: true
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: target_platform Value: all
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: id Value: g++-gcc-9.4.0-2
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: compile_options
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/c++/9
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu/c++/9
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/c++/9/backward
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/9/include
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/local/include
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: dryrun_switch Value: -E
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: dryrun_switch Value: -v
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -dM
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -E
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -o.+
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -c
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -Werror
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: preprocess_remove_next_arg Value: -o
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: preprocess_switch Value: -xc++
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: preprocess_switch Value: -E
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: preprocess_switch Value: -U__BLOCKS__
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: preprocess_compile_switch Value: -C
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: preprocess_output Value: -
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: dryrun_output Value: 2
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-2/coverity-compiler-compat.h
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: macro_pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-2/coverity-macro-compat.h
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_float
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_feature_test_macros
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_stdarg_builtin
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_int
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_cplusplus
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: -w
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --comp_ver
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: 9.4.0
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --size_t_type=m
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --ptrdiff_t_type=l
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_sizes=w4xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_alignments=w4xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --char_bit_size=8
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --wchar_t_keyword
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_multiline_string
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_trigraphs
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --ignore_calling_convention
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_80bit_float
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_float
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --macro_stack_pragmas
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --exceptions
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --arg_dependent_overload
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --inline_keyword
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_macro
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_next_macro
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_cpp_attribute_macro
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.c{1,2}$
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.cpp$
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-2/../user_nodefs.h
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: pch_options
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>           Node: archetype Value: gcc
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: link_options
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/../lib/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/../lib/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libc.so
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: pre_trans
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>             Node: pre_prepend_arg Value: -coverity_c_suffixes_are_cxx
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>             Node: includes_from_env_var Value: CPLUS_INCLUDE_PATH
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>             Node: pre_prepend_arg Value: --c++
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: expand
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>             Node: replace_arg_regex
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>               Node: replace Value: @(.*)
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>               Node: with Value: --coverity_resp_file=$1
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: pre_trans
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>             Node: intern_trans Value: gnu_pre_translate
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>             Node: includes_from_env_var Value: CPATH
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>             Node: includes_from_env_var_empty_is_cwd Value: true
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|>   Node: md5 Value: 814d49b5045e82d39eb28e053dd923a1
+2024-09-02T12:28:51.141005Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-2/coverity_config.xml
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_name Value: gcc
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_name Value: gcc-9
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_name Value: x86_64-linux-gnu-gcc-9
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_dir Value: /usr/bin
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_translator Value: g++cc
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_lang Value: C
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_front_end Value: cov-emit
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_desc Value: GNU C++ Compiler
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_generic Value: gnu
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: comp_require
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: id Value: g++cc-gcc-9.4.0-2
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: version Value: 9.4.0
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: is_compiler Value: true
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: is_linker Value: true
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: target_platform Value: all
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: id Value: g++cc-gcc-9.4.0-2
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: compile_options
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/9/include
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/local/include
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: dryrun_switch Value: -xc
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: dryrun_switch Value: -E
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: dryrun_switch Value: -v
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -xc
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -dM
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -E
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -o.+
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -c
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -Werror
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: preprocess_remove_next_arg Value: -o
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: preprocess_switch Value: -E
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: preprocess_switch Value: -U__BLOCKS__
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: preprocess_switch Value: -xc
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: preprocess_compile_switch Value: -C
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: preprocess_output Value: -
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: dryrun_output Value: 2
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-2/coverity-compiler-compat.h
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: macro_pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-2/coverity-macro-compat.h
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --fixed_point
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_float
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_feature_test_macros
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_stdarg_builtin
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_int
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_cplusplus
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: -w
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --comp_ver
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: 9.4.0
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --size_t_type=m
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --ptrdiff_t_type=l
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_sizes=xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_alignments=xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --char_bit_size=8
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --restrict
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --wchar_t_type=i
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_multiline_string
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_trigraphs
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --ignore_calling_convention
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --c11
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_80bit_float
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_float
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --allow__bool
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --macro_stack_pragmas
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --inline_keyword
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_macro
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_next_macro
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_cpp_attribute_macro
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.c{1,2}$
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.cpp$
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-2/../user_nodefs.h
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: pch_options
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>           Node: archetype Value: gcc
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: link_options
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/../lib/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/../lib/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libc.so
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: expand
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>             Node: replace_arg_regex
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>               Node: replace Value: @(.*)
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>               Node: with Value: --coverity_resp_file=$1
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: pre_trans
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>             Node: intern_trans Value: gnu_pre_translate
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>             Node: includes_from_env_var Value: CPATH
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>             Node: includes_from_env_var_empty_is_cwd Value: true
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>             Node: includes_from_env_var Value: C_INCLUDE_PATH
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>             Node: pre_prepend_arg Value: --c
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|>   Node: md5 Value: b882877e44d1f29f886fc501a28018b4
+2024-09-02T12:28:51.141640Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-3/coverity_config.xml
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_name Value: g++
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_name Value: g++-9
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_name Value: x86_64-linux-gnu-g++-9
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_dir Value: /usr/bin
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_translator Value: g++
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_lang Value: C++
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_front_end Value: cov-emit
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_desc Value: GNU C++ Compiler
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_next_type Value: g++cc
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_generic Value: gnu
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: comp_require
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: id Value: g++-g++-9.4.0-3
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: version Value: 9.4.0
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: is_compiler Value: true
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: is_linker Value: true
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: target_platform Value: all
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: id Value: g++-g++-9.4.0-3
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: compile_options
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/c++/9
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu/c++/9
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/c++/9/backward
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/9/include
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/local/include
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: dryrun_switch Value: -E
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: dryrun_switch Value: -v
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -dM
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -E
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -o.+
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -c
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -Werror
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: preprocess_remove_next_arg Value: -o
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: preprocess_switch Value: -xc++
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: preprocess_switch Value: -E
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: preprocess_switch Value: -U__BLOCKS__
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: preprocess_compile_switch Value: -C
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: preprocess_output Value: -
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: dryrun_output Value: 2
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-3/coverity-compiler-compat.h
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: macro_pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-3/coverity-macro-compat.h
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_float
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_feature_test_macros
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_stdarg_builtin
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_int
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_cplusplus
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: -w
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --comp_ver
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: 9.4.0
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --size_t_type=m
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --ptrdiff_t_type=l
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_sizes=w4xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_alignments=w4xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --char_bit_size=8
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --wchar_t_keyword
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_multiline_string
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_trigraphs
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --ignore_calling_convention
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_80bit_float
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_float
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --macro_stack_pragmas
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --exceptions
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --arg_dependent_overload
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --inline_keyword
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_macro
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_next_macro
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_cpp_attribute_macro
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.c{1,2}$
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.cpp$
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-3/../user_nodefs.h
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: pch_options
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>           Node: archetype Value: gcc
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: link_options
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/../lib/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/../lib/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libstdc++.so
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libm.so
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libm.so.6
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libmvec.so.1
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libc.so
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: pre_trans
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>             Node: pre_prepend_arg Value: -coverity_c_suffixes_are_cxx
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>             Node: includes_from_env_var Value: CPLUS_INCLUDE_PATH
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>             Node: pre_prepend_arg Value: --c++
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: expand
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>             Node: replace_arg_regex
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>               Node: replace Value: @(.*)
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>               Node: with Value: --coverity_resp_file=$1
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: pre_trans
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>             Node: intern_trans Value: gnu_pre_translate
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>             Node: includes_from_env_var Value: CPATH
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>             Node: includes_from_env_var_empty_is_cwd Value: true
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|>   Node: md5 Value: cc9d96600dd0acdf933fd47f48cc373c
+2024-09-02T12:28:51.142120Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-3/coverity_config.xml
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_name Value: g++
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_name Value: g++-9
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_name Value: x86_64-linux-gnu-g++-9
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_dir Value: /usr/bin
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_translator Value: g++cc
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_lang Value: C
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_front_end Value: cov-emit
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_desc Value: GNU C++ Compiler
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_generic Value: gnu
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: comp_require
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: id Value: g++cc-g++-9.4.0-3
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: version Value: 9.4.0
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: is_compiler Value: true
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: is_linker Value: true
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: target_platform Value: all
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: id Value: g++cc-g++-9.4.0-3
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: compile_options
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/9/include
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/local/include
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: sysinclude_dir Value: /usr/include
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: dryrun_switch Value: -xc
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: dryrun_switch Value: -E
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: dryrun_switch Value: -v
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -xc
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -dM
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: dump_macros_arg Value: -E
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -o.+
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -c
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: preprocess_remove_arg Value: -Werror
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: preprocess_remove_next_arg Value: -o
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: preprocess_switch Value: -E
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: preprocess_switch Value: -U__BLOCKS__
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: preprocess_switch Value: -xc
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: preprocess_compile_switch Value: -C
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: preprocess_output Value: -
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: dryrun_output Value: 2
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-3/coverity-compiler-compat.h
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: macro_pre_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-3/coverity-macro-compat.h
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --fixed_point
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_float
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_feature_test_macros
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_stdarg_builtin
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_int
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefined_cplusplus
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: -w
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --comp_ver
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: 9.4.0
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --size_t_type=m
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --ptrdiff_t_type=l
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_sizes=xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --type_alignments=xl8i4s2e16d8f4P8
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --char_bit_size=8
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --restrict
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --wchar_t_type=i
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_multiline_string
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_trigraphs
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --ignore_calling_convention
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --c11
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_80bit_float
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --enable_128bit_float
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --allow__bool
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --macro_stack_pragmas
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --inline_keyword
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_macro
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_include_next_macro
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --has_cpp_attribute_macro
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: prepend_arg Value: --no_predefines
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.c{1,2}$
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: skip_file Value: conftest\.cpp$
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++cc-config-3/../user_nodefs.h
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: pch_options
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>           Node: archetype Value: gcc
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: link_options
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/../lib/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/9/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/../lib/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libstdc++.so
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libm.so
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libm.so.6
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libmvec.so.1
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libc.so
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: expand
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>             Node: replace_arg_regex
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>               Node: replace Value: @(.*)
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>               Node: with Value: --coverity_resp_file=$1
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: pre_trans
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>             Node: intern_trans Value: gnu_pre_translate
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>             Node: includes_from_env_var Value: CPATH
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>             Node: includes_from_env_var_empty_is_cwd Value: true
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: trans
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>             Node: includes_from_env_var Value: C_INCLUDE_PATH
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>             Node: pre_prepend_arg Value: --c
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|>   Node: md5 Value: 7425d88b92eda15897d37870ccb3903b
+2024-09-02T12:28:51.142824Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/ld-config-1/coverity_config.xml
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: comp_name Value: ld
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: comp_name Value: x86_64-linux-gnu-ld
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: comp_name Value: x86_64-linux-gnu-ld.bfd
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: comp_dir Value: /usr/bin
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: comp_translator Value: ld
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: comp_lang Value: C++
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: comp_front_end Value: cov-emit
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: comp_desc Value: GNU C/C++ Linker
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: comp_generic Value: ld
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: id Value: ld-ld-1
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: is_compiler Value: false
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: is_linker Value: true
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: id Value: ld-ld-1
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: link_options
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/local/lib/x86_64-linux-gnu
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /lib/x86_64-linux-gnu
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib/x86_64-linux-gnu64
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/local/lib64
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /lib64
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib64
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/local/lib
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /lib
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/lib
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/x86_64-linux-gnu/lib64
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: library_search_path Value: /usr/x86_64-linux-gnu/lib
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|>   Node: md5 Value: f66425a119e7a114816f4808495effae
+2024-09-02T12:28:51.143378Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/ar-config-1/coverity_config.xml
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: comp_name Value: ar
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: comp_name Value: x86_64-linux-gnu-ar
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: comp_dir Value: /usr/bin
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: comp_translator Value: ar
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: comp_lang Value: C++
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: comp_front_end Value: cov-emit
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: comp_desc Value: UNIX-like 'ar` archiver
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: comp_generic Value: ar
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: id Value: ar-ar-1
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: is_compiler Value: false
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: is_linker Value: true
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: id Value: ar-ar-1
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: link_options
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: pre_trans
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>           Node: options
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>             Node: intern_trans Value: ar_pre_translate
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|>   Node: md5 Value: 9590ab0cfad0436252821959f300cebb
+2024-09-02T12:28:51.143538Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-gcc-config-0/coverity_config.xml
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: template_compiler Value: true
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: comp_name Value: g++
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: comp_translator Value: gcc
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: comp_lang Value: C
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: comp_generic Value: gnu
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: id Value: gcc-g++-.*
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-gcc-config-0/../user_nodefs.h
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: id Value: g++-g++-.*
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-gcc-config-0/../user_nodefs.h
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: id Value: g++cc-g++-.*
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-gcc-config-0/../user_nodefs.h
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|>   Node: md5 Value: dbc630e5dc4dcf4ea0be73e210dd7c78
+2024-09-02T12:28:51.143630Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-ld-config-0/coverity_config.xml
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>         Node: template_compiler Value: true
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>         Node: comp_name Value: ld
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>         Node: comp_translator Value: ld
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>         Node: comp_lang Value: C++
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>         Node: comp_generic Value: ld
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>         Node: id Value: ld-ld-.*
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-ld-config-0/../user_nodefs.h
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|>   Node: md5 Value: b7c847d801b0294a4f0f52192f7f3e16
+2024-09-02T12:28:51.143788Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|> Configuration read from: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-ar-config-0/coverity_config.xml
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|> Node: coverity
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>   Node: cit_version Value: 1
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>   Node: config
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>     Node: build
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>       Node: compiler
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>         Node: template_compiler Value: true
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>         Node: comp_name Value: ar
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>         Node: comp_translator Value: ar
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>         Node: comp_lang Value: C++
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>         Node: comp_generic Value: ar
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>       Node: options
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>         Node: id Value: ar-ar-.*
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>         Node: opt_preinclude_file Value: /home/dinesh/cov-analysis-linux64-2021.12.1/config/template-ar-config-0/../user_nodefs.h
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>         Node: begin_command_line_config
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|>   Node: md5 Value: a125f1c14acadfc9d06e8f9e711705ce
+2024-09-02T12:28:51.143851Z|cov-build|23702|info|> 
+2024-09-02T12:28:51.146598Z|cov-build|23702|info|> Using LD_PRELOAD = /home/dinesh/cov-analysis-linux64-2021.12.1/bin/libcapture-linux64-${PLATFORM}.so
+[23705] EXECUTING: g++ -c virtual_destructor.cpp
+[23706] CWD: /home/dinesh/C-Lehren
+[23706] COMPILING: /home/dinesh/cov-analysis-linux64-2021.12.1/bin/cov-translate g++ -c virtual_destructor.cpp
+COV_TRANSLATE EXPANDED ARGS: "-c" "virtual_destructor.cpp"
+[STATUS] Compiling virtual_destructor.cpp
+/home/dinesh/cov-analysis-linux64-2021.12.1/bin/cov-emit --emit_pch_dependencies --dir=/home/dinesh/C-Lehren/coverity_output --ignore_path=/tmp/cov-dinesh/5bb470580f164c7a26050636ba17ff53/cov-configure --ignore_path=/tmp/cov-dinesh/5bb470580f164c7a26050636ba17ff53/cov-dinesh/afcf16a306bc3d36c78958c574782d27 --pre_preinclude /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-3/coverity-macro-compat.h --pre_preinclude /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-3/coverity-compiler-compat.h --add_type_modifier=__coverity___fpreg --add_type_modifier=__coverity_decimal --add_type_modifier=__coverity_float --add_type_modifier=__coverity_floatx --no_predefined_feature_test_macros --no_stdarg_builtin --enable_128bit_int --no_predefined_cplusplus -w --no_predefines --comp_ver 9.4.0 --char_bit_size=8 --gnu_carriage_return_line_terminator --wchar_t_keyword --no_multiline_string --no_trigraphs --ignore_calling_convention --enable_80bit_float --enable_128bit_float --macro_stack_pragmas --exceptions --arg_dependent_overload --inline_keyword --has_include_macro --has_include_next_macro --has_cpp_attribute_macro --no_predefines --preinclude /home/dinesh/cov-analysis-linux64-2021.12.1/config/g++-config-3/../user_nodefs.h --c++ --no_macro_preempts_udl_suffix --builtin_emulation --allow_incompat_throw --new_array_args --type_traits_helpers --c++14 --gnu_version 90400 --no_trigraphs --sys_include /usr/include/c++/9 --sys_include /usr/include/x86_64-linux-gnu/c++/9 --sys_include /usr/include/c++/9/backward --sys_include /usr/lib/gcc/x86_64-linux-gnu/9/include --sys_include /usr/local/include --sys_include /usr/include/x86_64-linux-gnu --sys_include /usr/include -D__NO_INLINE__ --type_sizes=e16Pdlx8fiw4s2 --type_alignments=e16Pdlx8fiw4s2 --size_t_type=m --ptrdiff_t_type=l virtual_destructor.cpp 
+Emit for file '/home/dinesh/C-Lehren/virtual_destructor.cpp' complete.
+[23711] EXECUTING: /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -imultiarch x86_64-linux-gnu -D_GNU_SOURCE virtual_destructor.cpp -quiet -dumpbase virtual_destructor.cpp -mtune=generic -march=x86-64 -auxbase virtual_destructor -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccLWNL5D.s
+[23712] EXECUTING: as --64 -o virtual_destructor.o /tmp/ccLWNL5D.s
+2024-09-02T12:28:52.824509Z|cov-build|23702|info|> Invoking cov-security-da with commands: /home/dinesh/cov-analysis-linux64-2021.12.1/bin/cov-security-da --dir /home/dinesh/C-Lehren/coverity_output
+2024-09-02T12:28:52.865233Z|cov-build|23702|info|> Dynamic analyzer took 40 ms
+2024-09-02T12:28:52.865233Z|cov-build|23702|info|> Build time (cov-build overall): 00:00:02.246413
+2024-09-02T12:28:52.865233Z|cov-build|23702|info|> 
+2024-09-02T12:28:52.866403Z|cov-build|23702|info|> Build time (C/C++ emits total): 00:00:01.199154
+2024-09-02T12:28:52.866403Z|cov-build|23702|info|> 
+2024-09-02T12:28:52.866403Z|cov-build|23702|info|> 
+2024-09-02T12:28:52.866530Z|cov-build|23702|info|> Emitted 1 C/C++ compilation units (100%) successfully
+2024-09-02T12:28:52.866530Z|cov-build|23702|info|> 
+2024-09-02T12:28:52.866530Z|cov-build|23702|info|> 1 C/C++ compilation units (50%) are ready for analysis
+2024-09-02T12:28:52.866530Z|cov-build|23702|info|> The cov-build utility completed successfully.

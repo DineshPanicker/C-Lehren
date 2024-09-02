@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "config.dtd">
+<coverity>
+
+<metrics>
+    <metric>
+        <name>time</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>args</name>
+        <value>cov-build --dir coverity_output g++ -c virtual_destructor.cpp</value>
+    </metric>
+    <metric>
+        <name>host</name>
+        <value>MSI</value>
+    </metric>
+    <metric>
+        <name>short-platform</name>
+        <value>linux64</value>
+    </metric>
+    <metric>
+        <name>platform</name>
+        <value>Linux 5.10.102.1-microsoft-standard-WSL2 x86_64</value>
+    </metric>
+    <metric>
+        <name>ident</name>
+        <value>2021.12.1 (build 5269ff0e19 p-2021.12-push-625)</value>
+    </metric>
+    <metric>
+        <name>user</name>
+        <value>dinesh</value>
+    </metric>
+    <metric>
+        <name>cwd</name>
+        <value>/home/dinesh/C-Lehren</value>
+    </metric>
+    <metric>
+        <name>config</name>
+        <value>/home/dinesh/cov-analysis-linux64-2021.12.1/config/coverity_config.xml</value>
+    </metric>
+    <metric>
+        <name>intermediatedir</name>
+        <value>/home/dinesh/C-Lehren/coverity_output</value>
+    </metric>
+    <metric>
+        <name>outputdir</name>
+        <value>/home/dinesh/C-Lehren/coverity_output/output</value>
+    </metric>
+    <metric>
+        <name>emitdir</name>
+        <value>/home/dinesh/C-Lehren/coverity_output/emit</value>
+    </metric>
+    <metric>
+        <name>force</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>cygwin</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>failures</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>successes</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>recoverable-errors</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapps-detected</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-successes</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-compilation-secs</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>buildcmd</name>
+        <value>g++ -c virtual_destructor.cpp</value>
+    </metric>
+</metrics>
+</coverity>

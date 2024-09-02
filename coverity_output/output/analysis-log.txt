@@ -1,0 +1,329 @@
+cmdline: command line: cov-analyze --dir coverity_output --all 
+cmdline: parsed cmdline: [
+cmdline:   { name: "dir", args: [ "coverity_output" ] },
+cmdline:   { name: "all" },
+cmdline:   { name: "config", args: [ "/home/dinesh/cov-analysis-linux64-2021.12.1/config/coverity_config.xml" ] },
+cmdline: ]
+startup: am_pid=23731
+startup: detected platform: Linux 5.10.102.1-microsoft-standard-WSL2 x86_64
+startup: target platform: linux64
+startup: Detected 12 logical cpus
+startup: Detected 6 cpu cores
+startup: host name: MSI
+startup: user name: dinesh
+startup: Analysis version: 2021.12.1 (5269ff0e19 p-2021.12-push-625)
+startup: temp directory: /tmp/cov-dinesh/15f44a1f868296750ba9f8837ee8ff4f
+startup: enable_constraint_fpp=0
+startup: current time: 2024-Sep-02 17:59:04
+startup: Detected amount of memory: 8057000kb
+startup: Limiting memory to 7251300kb
+Sigma checker-properties info: Capturing Sigma checker properties...
+Sigma checker-properties info: Command line for sigma /home/dinesh/cov-analysis-linux64-2021.12.1/sigma/bin/sigma internal-coverity-integration checker-properties /tmp/cov-dinesh/15f44a1f868296750ba9f8837ee8ff4f/sigma-checker-properties.json --protocol-version 1
+Sigma checker-properties info: Exit status: code 0
+Sigma checker-properties info: Loaded 901 checker properties for Sigma.
+wlink: Identifying web applications
+wlink: Linking web-app archive bytecode
+wlink: Web-app linker scanned 0 web-apps (found: 0 classfiles, 0 jars, and 0 other files)
+wlink: Webapps domains found: 0 Android app domains found: 1
+emitdb: callgraph.cpp:2276 11111111
+emitdb: callgraph.cpp:2306 11000011
+emitdb: callgraph.cpp:2326 11000011
+codexm: Initializing data gathered from CodeXM
+directives: ===== User directives:
+directives: === Language: apex
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: cpp
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: cs
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: cuda
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: fortran
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: go
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: java
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: javascript
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: kotlin
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: objc
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: php
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: python2
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: python3
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: ruby
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: scala
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: swift
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: text-files
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: typescript
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: vb
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+rta: Not running RTA because it doesn't apply to current languages
+directives: Optimizing dataflow configuration
+directives: Optimizing dataflow configuration
+emitdb: callgraph.cpp:2335 11000000
+dyncg: N/A or no data
+general: Starting analysis
+Sigma analysis info: Running sigma analysis...
+Sigma analysis info: Using Sigma version: 2021.12.0
+Sigma analysis info: Command line for sigma /home/dinesh/cov-analysis-linux64-2021.12.1/sigma/bin/sigma --config /home/dinesh/C-Lehren/coverity_output/output/sigma-config.json --parse-timeout 3000000 analyze /home/dinesh/C-Lehren/coverity_output/output/sigma
+Sigma analysis info: List of disabled Sigma checkers: broad_domain_attribute_cookie_express, broad_domain_attribute_cookie_hapi_server_session, certificate_verification_disabled_core_java, certificate_verification_disabled_node_https, certificate_verification_disabled_node_request_reject_unauthorized, certificate_verification_disabled_node_restify, certificate_verification_disabled_node_tls, certificate_verification_disabled_node_ws, certificate_verification_disabled_socket_io, excessive_session_lifetime_connect_mongo, excessive_session_lifetime_connect_redis, excessive_session_lifetime_express_client_sessions, excessive_session_lifetime_express_cookie_session, excessive_session_lifetime_express_session, excessive_session_lifetime_google_cloud_datastore, insecure_cipher_node_crypto, insecure_iframe_sandbox_html, insecure_tls_cipher_suite_node_https, insecure_tls_cipher_suite_node_request, insecure_tls_cipher_suite_node_tls, insecure_tls_renegotiation_node_https, insecure_tls_renegotiation_node_request, insecure_tls_renegotiation_node_tls, insecure_tls_version_ios_protocol_max, insecure_tls_version_ios_protocol_min, insecure_tls_version_ios_stream_property, insecure_tls_version_node_https, insecure_tls_version_node_request, insecure_tls_version_node_tls, insufficient_password_hash_iterations_node_bcrypt, insufficient_password_hash_iterations_node_crypto, missing_httponly_attribute_session_cookie_express, missing_httponly_attribute_session_cookie_hapi_server_session, missing_iframe_sandbox_html, missing_secure_attribute_csrf_cookie_hapi_crumb, missing_secure_attribute_servlet, missing_secure_attribute_session_cookie_express, missing_secure_attribute_session_cookie_hapi_server_session, missing_secure_attribute_session_cookie_servlet_xml, missing_secure_attribute_session_cookie_spring_boot_properties, missing_secure_attribute_session_cookie_spring_boot_yaml, root_path_attribute_cookie_express, root_path_attribute_cookie_hapi_server_session, unrestricted_database_access_android, unrestricted_file_access_android, unsafe_innerhtml_manipulation_angular
+Sigma analysis info: Files dumped: 2
+Sigma analysis info: Exit status: 0
+Sigma stdout: Copyright (c) 2021 Synopsys, Inc.
+Sigma stdout: For documentation and support, visit https://community.synopsys.com/s/document-item?bundleId=sigma-ug
+Sigma stdout: By using this software, the user accepts the terms of Synopsys' end user software license and maintenance agreement found at: https://www.synopsys.com/company/legal/software-integrity.html
+Sigma stdout: 
+Sigma stdout: 
+Sigma stdout: Identified
+Sigma stdout: 
+Sigma stdout: │File Type│Occurrences│
+Sigma stdout: ├─────────┼───────────┤
+Sigma stdout: │C++      │          2│
+Sigma stdout: 
+Sigma stdout: 
+Sigma stdout: No issues found after 0 seconds
+Sigma stdout: 
+dm-access-lib: AM listening for DM at 127.0.0.1:41935
+dm-access-lib: AM starting DM with command line: /home/dinesh/cov-analysis-linux64-2021.12.1/bin/cov-internal-dm --AM-port 41935 --log-file /home/dinesh/C-Lehren/coverity_output/output/distributor.log -j 12 --AW-timeout 36000 /home/dinesh/cov-analysis-linux64-2021.12.1/bin/cov-analyze --worker --message-size-limit 104857600
+dm-access-lib: DM started: dm_pid=23762
+dm-access-lib: AM got connection from DM: (local) 127.0.0.1:41935 - 127.0.0.1:55258 (remote)
+makeWUP: ENABLE_ONLY0
+makeWUP: stat0
+makeWUP: stat1
+makeWUP: stat3
+makeWUP: stat2
+makeWUP: stat4
+wurlegend: <phase><n> dw_id wup_bytes dw_ms wur_bytes aw_ms [mem] paths (rest are labeled)
+wur: stat3 2 18216 1654 193 2 mem=125894656 max=210079744 9 nr=7 n: batch 2
+wur: stat4 3 20613 1661 226 6 mem=125898752 max=210083840 17 nr=10 n: batch 3
+makeWUP: stat5
+makeWUP: conc0
+makeWUP: conc1
+makeWUP: conc3
+makeWUP: conc7
+makeWUP: conc15
+makeWUP: conc31
+makeWUP: conc52
+makeWUP: conc51
+makeWUP: conc50
+makeWUP: conc49
+makeWUP: conc48
+makeWUP: conc47
+makeWUP: conc46
+makeWUP: conc45
+makeWUP: conc44
+makeWUP: conc43
+makeWUP: conc42
+makeWUP: conc41
+makeWUP: conc40
+makeWUP: conc39
+makeWUP: conc38
+makeWUP: conc37
+makeWUP: conc36
+makeWUP: conc35
+makeWUP: conc34
+makeWUP: conc33
+makeWUP: conc30
+makeWUP: conc32
+makeWUP: conc29
+makeWUP: conc28
+makeWUP: conc27
+makeWUP: conc26
+makeWUP: conc25
+makeWUP: conc24
+makeWUP: conc23
+makeWUP: conc22
+makeWUP: conc21
+makeWUP: conc20
+makeWUP: conc19
+makeWUP: conc18
+makeWUP: conc17
+makeWUP: conc14
+makeWUP: conc16
+makeWUP: conc13
+makeWUP: conc12
+makeWUP: conc11
+makeWUP: conc10
+makeWUP: conc9
+makeWUP: conc6
+makeWUP: conc8
+makeWUP: conc5
+makeWUP: conc2
+makeWUP: conc4
+makeWUP: conc53
+makeWUP: conc56
+makeWUP: conc57
+makeWUP: conc58
+makeWUP: conc55
+makeWUP: conc59
+makeWUP: conc54
+makeWUP: conc60
+makeWUP: conc66
+makeWUP: conc64
+makeWUP: conc67
+makeWUP: conc68
+makeWUP: conc69
+makeWUP: conc65
+wur: conc60 1 6897 1274 1700 15 mem=126357504 max=210542592 2 n: _ZN8BaseDataD9Ev in TU 1
+makeWUP: conc61
+makeWUP: conc62
+wur: conc62 2 3396 10 2229 8 mem=126320640 max=210505728 1 n: _ZN8BaseDataC9Ei in TU 1
+wur: conc61 1 7623 15 2022 13 4 n: _ZN11DerivedDataD9Ev in TU 1
+makeWUP: conc63
+wur: conc63 1 5493 8 2749 6 1 n: _ZN11DerivedDataC9Eii in TU 1
+makeWUP: conc70
+wur: conc70 1 5934 17 1263 18 5 n: main in TU 1
+makeWUP: conc71
+makeWUP: PER_TU0
+makeWUP: PER_TU1
+makeWUP: PER_TU2
+makeWUP: conctd0
+makeWUP: conctd1
+makeWUP: conctd8
+makeWUP: conctd10
+makeWUP: conctd9
+makeWUP: conctd11
+makeWUP: conctd2
+makeWUP: conctd12
+makeWUP: conctd4
+makeWUP: conctd13
+makeWUP: conctd16
+makeWUP: conctd7
+makeWUP: conctd6
+makeWUP: conctd14
+makeWUP: conctd15
+makeWUP: conctd17
+makeWUP: conctd5
+makeWUP: conctd3
+makeWUP: conctd18
+makeWUP: conctd70
+makeWUP: conctd69
+makeWUP: conctd65
+makeWUP: conctd57
+makeWUP: conctd41
+makeWUP: conctd19
+makeWUP: conctd20
+makeWUP: conctd21
+makeWUP: conctd22
+makeWUP: conctd23
+makeWUP: conctd24
+makeWUP: conctd25
+makeWUP: conctd26
+makeWUP: conctd27
+makeWUP: conctd28
+makeWUP: conctd29
+makeWUP: conctd30
+makeWUP: conctd31
+makeWUP: conctd32
+makeWUP: conctd33
+makeWUP: conctd34
+makeWUP: conctd35
+makeWUP: conctd36
+makeWUP: conctd37
+makeWUP: conctd38
+makeWUP: conctd39
+makeWUP: conctd42
+makeWUP: conctd58
+makeWUP: conctd44
+makeWUP: conctd43
+makeWUP: conctd45
+makeWUP: conctd46
+makeWUP: conctd47
+makeWUP: conctd48
+makeWUP: conctd49
+makeWUP: conctd50
+makeWUP: conctd51
+makeWUP: conctd52
+makeWUP: conctd53
+makeWUP: conctd54
+makeWUP: conctd55
+makeWUP: conctd40
+makeWUP: conctd66
+makeWUP: conctd60
+makeWUP: conctd59
+makeWUP: conctd61
+makeWUP: conctd62
+makeWUP: conctd63
+makeWUP: conctd56
+makeWUP: conctd68
+makeWUP: conctd64
+makeWUP: conctd67
+makeWUP: conctd71
+makeWUP: gen0
+makeWUP: gen1
+makeWUP: gen2
+makeWUP: gen3
+makeWUP: gen4
+makeWUP: PER_TU3
+wur: gen3 1 37833 51 102 45 9 nr=7 n: batch 2
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur: gen4 2 54245 112 233 107 27 nr=10 n: batch 3
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+wur_diagnostics: No iterators, skipping function
+makeWUP: gen5
+summary: Analysis summary report:
+summary: ------------------------
+summary: Files analyzed                 : 10 Total
+summary:     C++                        : 10
+summary: Total LoC input to cov-analyze : 29461
+summary: Functions analyzed             : 17
+summary: Classes/structs analyzed       : 13
+summary: Paths analyzed                 : 36
+summary: Time taken by analysis         : 00:00:06
+summary: Defect occurrences found       : 0
+summary: TU Language    Capture    TU Count
+summary: -----------    -------    --------
+summary: C++            Build         10
+summary: Number of functions: 70
+summary: out_of_memory count: 0
+summary: paths_exceeded count: 0
+summary: recoverable failures: 0
+summary: cpp-wu-time-milliseconds: 31348
+summary: all-wu-time-milliseconds: 31348
+mem: AM peak mem bytes: 282406912
+assert: suppressed asserts: workers=0, master=0
+failures: recoverable failures: workers=0, master=0

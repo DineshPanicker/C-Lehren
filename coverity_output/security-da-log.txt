@@ -1,0 +1,4 @@
+/home/dinesh/cov-analysis-linux64-2021.12.1/bin/cov-security-da --dir /home/dinesh/C-Lehren/coverity_output 
+cov-security-da version 2021.12.1 on Linux 5.10.102.1-microsoft-standard-WSL2 x86_64
+Internal version numbers: 5269ff0e19 p-2021.12-push-625
+

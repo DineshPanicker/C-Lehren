@@ -1,0 +1,10 @@
+Translation unit:
+1 -> /home/dinesh/C-Lehren/virtual_destructor.cpp
+cov-emit invocation time (seconds): 1
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 1
+Translation unit:
+2 -> /home/dinesh/C-Lehren/null_pointer.cpp (no ASTs) (failure)
+cov-emit invocation time (seconds): 0
+cov-translate invocation time (seconds): 0
+cov-build invocation time (seconds): 0

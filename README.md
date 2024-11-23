@@ -61,4 +61,4 @@ This repository will grow as I deepen my understanding of **modern C++**. Expect
 Got tips, suggestions, or want to share your C++ journey? Open an issue or pull request—let’s learn and grow together!  
 
 Happy coding!  
-~ *[Your Name]* 😊  
+~ *Dinesh Panicker* 😊  

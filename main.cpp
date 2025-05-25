@@ -2,18 +2,17 @@
 
 using namespace std;
 
-int func(int *y)
+int func(const int &y) // reference semantics
 {
     cout << "Address of y: " << &y << endl;
-    *y = 9;
-    return *y;
+    return y;
 }
 
 int main()
 {
     int x = 3;
     cout << "Address of x is : " << &x << endl;
-    int z = func(&x);
+    int z = func(x);
     cout << "Adress of z is : " << &z << endl;
     cout << "After calling func(), x = " << x << endl;
     cout << "After calling func(), z= " << z << endl;

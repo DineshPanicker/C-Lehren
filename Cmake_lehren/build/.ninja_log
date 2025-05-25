@@ -1,0 +1,5 @@
+# ninja log v5
+83	342	1748163278811773263	CMakeFiles/hello_world.dir/src/main.c.o	34cfc34b3c506de0
+0	443	1748163278921774121	CMakeFiles/my_lib.dir/src/my_lib.c.o	3780aa8699bab81f
+443	495	1748163278971774523	libmy_lib.a	4a43eafa60930430
+495	854	1748163279331777423	hello_world	a76bf16af38cfb33

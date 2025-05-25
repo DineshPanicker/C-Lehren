@@ -1,0 +1,4 @@
+/home/dinesh/C-Lehren/Cmake_lehren/build/CMakeFiles/my_lib.dir
+/home/dinesh/C-Lehren/Cmake_lehren/build/CMakeFiles/hello_world.dir
+/home/dinesh/C-Lehren/Cmake_lehren/build/CMakeFiles/edit_cache.dir
+/home/dinesh/C-Lehren/Cmake_lehren/build/CMakeFiles/rebuild_cache.dir
